@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import classes from './Header.module.css';
-import { AuthAction } from '../store';
+import { AuthAction } from '../store/AuthSlice';
+
 
 const Header = () => {
   const isAuth = useSelector(state => state.auth.isAuthenticated)
